@@ -1,0 +1,32 @@
+
+
+:root{
+  font-family:'Pretendard','Noto Sans KR', sans-serif;
+  //색상 변수 지정
+  //gray scale
+  --color-white: #FFFFFF !important;
+  --color-gray-100: #F5F5F5 !important;
+  --color-gray-300: #E8E8EF !important;
+  --color-gray-500: #9E9EAC !important;
+  --color-gray-700: #49495C !important;
+  --color-gray-900: #363642 !important;
+  --color-black: #23232D !important;
+  //color scale
+  --color-blue: #11009E !important;
+  --color-light-blue: #4942E4 !important;
+  --color-pink: #E6B9DE !important;
+  --color-light-pink: #FAE7F3 !important;
+  --color-coral: #FFA4A4 !important;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+*,
+*::before,
+*::after,
+{
+  box-sizing: border-box;
+}
