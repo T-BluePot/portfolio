@@ -1,6 +1,6 @@
 
 
-import PfNavigation from './components/common/PfNavigation.jsx'
+import PfNavigation from './components/commons/PfNavigation.jsx'
 
 function App() {
   return (
