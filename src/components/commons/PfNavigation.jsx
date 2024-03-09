@@ -6,8 +6,8 @@ import PfButton from './PfButton'
 
 const PfNavigation = () => {
   return (
-    <div className="w-full h-14 pf-navigation flex items-center">
-      <div className="w-full h-full flex flex-1 bg-red-500">
+    <div className="w-full h-14 pf-navigation flex">
+      <div className="w-full h-full flex flex-1 items-center bg-red-500">
         <IconHamburger className=""></IconHamburger>
       </div>
       <div className="w-full h-full flex flex-[2_2_0%] bg-blue-500">
