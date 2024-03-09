@@ -5,8 +5,17 @@
     "plugin:prettier/recommended",
     "@salesforce/eslint-config-lwc/recommended"
   ],
-  "plugins": [
-    "react",
-    "prettier"
-  ]
+  "plugins": ["react", "prettier"],
+  "eslintConfig": {
+    "extends": ["react-app", "airbnb"],
+    "rules": {
+      "react/prefer-stateless-function": 0,
+      "react/jsx-filename-extension": 0,
+      "react/jsx-one-expression-per-line": 0
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  }
 }
