@@ -10,7 +10,7 @@ const PfNavigation = () => {
       <div className="pf-bar w-full h-14 fixed"></div>
       <div className="w-full h-14 flex fixed z-[999]">
         <div className="w-full h-full flex flex-1 items-center">
-          <IconHamburger className=""></IconHamburger>
+          <IconHamburger className="" ></IconHamburger>
         </div>
         <div className="w-full h-full flex flex-[2_2_0%] justify-center items-center">
           <PfBluePotLogo
