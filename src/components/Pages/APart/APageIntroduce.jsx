@@ -7,10 +7,12 @@ const APageIntroduce = () => {
       id="pageI"
       className="w-full h-screen">
       <div className="pt-44">
-        <div className="title pt-44 text-center">팀원 소개</div>
-        <div id="imageFace">
-          <div></div>
-          <div></div>
+        <div className="iTitle text-center">팀원 소개</div>
+        <div
+          id="imageFace"
+          className="pt-10 flex flex-wrap place-content-center">
+          <div className="faceImg w-64 h-64 mr-5"></div>
+          <div className="faceImg w-64 h-64 ml-5"></div>
         </div>
       </div>
     </div>

@@ -2,6 +2,12 @@
   background-color: #ffa4a4;
 }
 
-.title {
-  font-weight: 500;
+.iTitle {
+  font-weight: 600;
+  font-size: 32px;
+  color: #23232d;
+}
+
+.faceImg {
+  background-color: #fff;
 }
