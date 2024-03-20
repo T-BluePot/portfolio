@@ -6,8 +6,8 @@ const MainPageTitle = () => {
   return (
     <div
       id="main"
-      className="z-10 pt-48">
-      <div className="title text-center text-6xl leading-tight">
+      className="w-full h-screen z-10 pt-48">
+      <div className="title text-center leading-tight tracking-wide">
         <div>세상을 푸르게</div>
         <div>가슴은 뜨겁게</div>
       </div>
