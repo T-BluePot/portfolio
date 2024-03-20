@@ -2,37 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  font-family:'Pretendard','Noto Sans KR', sans-serif;
+:root {
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
   /* //색상 변수 지정 */
   /* //gray scale */
-  --color-white: #FFFFFF !important;
-  --color-gray-100: #F5F5F5 !important;
-  --color-gray-300: #E8E8EF !important;
-  --color-gray-500: #9E9EAC !important;
-  --color-gray-700: #49495C !important;
+  --color-white: #ffffff !important;
+  --color-gray-100: #f5f5f5 !important;
+  --color-gray-300: #e8e8ef !important;
+  --color-gray-500: #9e9eac !important;
+  --color-gray-700: #49495c !important;
   --color-gray-900: #363642 !important;
-  --color-black: #23232D !important;
-  --color-black-transparents-80:rgba(54,54,66,0.8);
-  --color-black-transparents-60:rgba(54,54,66,0.6);
-  --color-black-transparents-40:rgba(54,54,66,0.4);
-  --color-black-transparents-20:rgba(54,54,66,0.2);
+  --color-black: #23232d !important;
+  --color-black-transparents-80: rgba(54, 54, 66, 0.8);
+  --color-black-transparents-60: rgba(54, 54, 66, 0.6);
+  --color-black-transparents-40: rgba(54, 54, 66, 0.4);
+  --color-black-transparents-20: rgba(54, 54, 66, 0.2);
   /* //color scale */
-  --color-blue: #11009E !important;
-  --color-light-blue: #4942E4 !important;
-  --color-pink: #E6B9DE !important;
-  --color-light-pink: #FAE7F3 !important;
-  --color-coral: #FFA4A4 !important;
+  --color-blue: #11009e !important;
+  --color-light-blue: #4942e4 !important;
+  --color-pink: #e6b9de !important;
+  --color-light-pink: #fae7f3 !important;
+  --color-coral: #ffa4a4 !important;
 }
 
-body{
-  margin: 0px;
+body {
+  margin: 0px auto;
   padding: 0px;
 }
 
 *,
 *::before,
-*::after,
-{
+*::after {
   box-sizing: border-box;
 }

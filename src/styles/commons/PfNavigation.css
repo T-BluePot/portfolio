@@ -1,3 +1,4 @@
-.pf-navigation{
-background-color: var(--color-black-transparents-20);
+.pf-bar {
+  background-color: #363642;
+  opacity: 80%;
 }
