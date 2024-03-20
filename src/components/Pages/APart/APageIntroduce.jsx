@@ -6,9 +6,12 @@ const APageIntroduce = () => {
     <div
       id="pageI"
       className="w-full h-screen">
-      <div>
-        <div>메인 텍스트데 대한 부분</div>
-        <div>서브 텍스트에 대한 부분</div>
+      <div className="pt-44">
+        <div className="title pt-44 text-center">팀원 소개</div>
+        <div id="imageFace">
+          <div></div>
+          <div></div>
+        </div>
       </div>
     </div>
   )
