@@ -3,6 +3,7 @@ import APageIntroduce from './components/Pages/APart/APageIntroduce.jsx'
 import PfNavigation from './components/commons/PfNavigation.jsx'
 import PSlidingButton from './components/commons/PSlidingButton.jsx'
 import PTopButton from './components/commons/PTopButton.jsx'
+import ProjectIntroducePage from './components/Pages/ProjectIntroducePage.jsx'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <PTopButton />
       <MainPageTitle />
       <APageIntroduce />
+      <ProjectIntroducePage/>
     </>
   )
 }
