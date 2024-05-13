@@ -4,4 +4,17 @@
   position: fixed;
   margin: 0 auto;
   top: 80%;
+  -webkit-animation: sdb 3s infinite;
+  animation: sdb 3s infinite;
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 10px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
 }
