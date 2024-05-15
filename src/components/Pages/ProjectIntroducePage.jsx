@@ -1,32 +1,44 @@
 // 20240406: 작업자 : 정은우
 import React from 'react'
 import '@styles/ProjectIntroducePage.css'
+import ProjectIntroduceMember from '@/components/projectIntroduce/ProjectIntroduceMember'
+import ProjectIntroduceOverview from '@/components/projectIntroduce/ProjectIntroduceOverview'
+import ProjectSelectCarousel from '@/components/projectIntroduce/ProjectSelectCarousel'
+import {motion} from 'framer-motion'
 
 const ProjectIntroducePage = () => {
+
   return (
     <div className="w-full h-screen page-container">
       <div className="flex justify-center w-full h-full">
         <div className="items-center justify-center flex-col flex ">
-            {/* 배너: 상단 프로젝트 소개 케러셀 */}
-          <div className="justify-end flex px-auto pb-6 w-full">
-            <div className="flex bg-white w-[700px] h-[50px] rounded-xl"></div>
-          </div>
+          {/* 배너: 상단 프로젝트 소개 케러셀 */}
           <div className="flex w-auto h-auto">
-            {/* 배너: 좌측 프로젝트 팀원별 작업내용 캐러셀 */}
-            <div className="bg-red-500 w-[100px] rounded-xl mr-6"></div>
-            {/* 콘텐츠: 화면 중앙 콘텐츠 내용 출력 */}
-            <div className=" flex bg-white w-[700px] h-[350px] rounded-xl">
-              <div className=" w-1/2 h-full">
-                <div className="py-6 pl-4 w-full h-full">
-                  <div className="bg-blue-500 w-full h-full"></div>
-                </div>
-              </div>
-              <div className=" w-1/2 h-full">
-                <div className="py-6 pl-4 w-full h-full">
-                  <div className="bg-blue-500 w-full h-full"></div>
-                </div>
-              </div>
-            </div>
+            <motion.div
+              initial={{ opacity:0, x: -200 }}
+              whileInView={{ opacity:1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{
+                ease: 'easeInOut',
+                duration: 0.5,
+                x: { duration: 1 }
+              }}>
+              <ProjectIntroduceMember />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 200 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: false }}
+              transition={{
+                ease: 'easeInOut',
+                duration: 0.5,
+                x: { duration: 1 }
+              }}>
+              {/* 배너: 좌측 프로젝트 팀원별 작업내용 캐러셀 */}
+              <ProjectSelectCarousel />
+              {/* 콘텐츠: 화면 중앙 콘텐츠 내용 출력 */}
+              <ProjectIntroduceOverview />
+            </motion.div>
           </div>
         </div>
       </div>
