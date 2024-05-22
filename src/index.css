@@ -29,6 +29,19 @@ body {
   margin: 0px auto;
   padding: 0px;
 }
+::-webkit-scrollbar {
+    display: block;
+    width:8px;
+    border-radius:4px;
+}
+::-webkit-scrollbar-track, ::-webkit-scrollbar-button {
+    display: none;
+    background:transparents;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #49495c;
+    border-radius:4px;
+}
 
 *,
 *::before,

@@ -29,7 +29,7 @@ const ProjectIntroducePage = () => {
               initial={{ opacity: 0, x: 200 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: false }}
-              transition={{
+              transition={{    
                 ease: 'easeInOut',
                 duration: 0.5,
                 x: { duration: 1 }
