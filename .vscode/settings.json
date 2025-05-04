@@ -1,0 +1,14 @@
+{
+  // 파일 네스팅 기능 활성화
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+
+  // 네스팅 규칙 정의
+  "explorer.fileNesting.patterns": {
+    "tsconfig.json": "tsconfig.*.json",
+    ".prettierrc": ".prettier*",
+    "eslint.config.js": ".eslint*",
+    "package.json": "package-lock.json",
+    "vite.config.ts": "index.html"
+  }
+}
