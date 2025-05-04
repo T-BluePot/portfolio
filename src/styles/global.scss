@@ -1,9 +1,70 @@
 // src/styles/global.scss
-$primary: #3b49df;
 
+// 🎨 메인 컬러 (분홍 계열)
+$color-pink-1: #ffa4a4;
+$color-pink-2: #e6b9de;
+$color-pink-3: #fae7f3;
+
+// 🌊 서브 컬러 (파랑 계열)
+$color-blue-1: #11009e;
+$color-blue-2: #4942e4;
+
+// 🌗 그레이스케일
+$color-black: #23232d;
+$color-gray-1: #363642;
+$color-gray-2: #49495c;
+$color-gray-3: #9e9eac;
+$color-gray-4: #e8e8ef;
+$color-gray-5: #f5f5f5;
+$color-white: #ffffff;
+
+// 💧 투명도용 HEX suffix
+$opacity-20: 33;
+$opacity-40: 66;
+$opacity-80: cc;
+
+// margin & padding 등 공간 정의
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 40px;
+
+// ✅ 기본 스타일
 body {
   margin: 0;
   font-family: sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: $color-black;
+  color: $color-white;
+}
+
+// 🛠 유틸리티 클래스
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
