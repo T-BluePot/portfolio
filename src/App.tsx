@@ -1,7 +1,6 @@
 // src/App.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainLayout from './components/layout/MainLayout';
-
+import MainLayout from './pages/layout/MainLayout';
 
 export default function App() {
   return (
