@@ -1,7 +1,7 @@
 // src/App.tsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainLayout from './components/layout/MainLayout';
-
+import MainLayout from './pages/layout/MainLayout';
+import AboutUs from './pages/layout/about-us/AboutUs';
 
 export default function App() {
   return (
@@ -12,6 +12,7 @@ export default function App() {
           {/* index 경로 ("/")일 때 HomeView */}
 
           {/* 나중에 더 페이지를 추가하려면 여기에 계속 Route를 적으면 됩니다 */}
+          <Route index element={<AboutUs />} />
         </Route>
       </Routes>
     </BrowserRouter>

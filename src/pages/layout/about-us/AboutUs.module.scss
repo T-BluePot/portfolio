@@ -1,1 +1,10 @@
 /* 팀 소개 페이지 css */
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  // 섹션 영역 설정
+  height: 100vh;
+  width: 100%;
+}
