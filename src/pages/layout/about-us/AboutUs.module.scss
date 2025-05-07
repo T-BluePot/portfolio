@@ -1,5 +1,5 @@
 /* 팀 소개 페이지 css */
-@import '../../../styles/global.scss';
+@import '../../../styles/typography.scss';
 
 .aboutUs {
   display: flex;
@@ -12,7 +12,5 @@
 }
 
 .title {
-  font-family: 'Pretendard Variable';
-  background-color: red;
-  font-weight: $font-thin;
+  @include text-h1;
 }
