@@ -4,7 +4,7 @@ import styles from './AboutUs.module.scss';
 export default function AboutUs() {
   return (
     <section id="about-us" className={styles.aboutUs}>
-      <p>테스트 용 텍스트</p>
+      <p className={styles.title}>테스트 용 텍스트</p>
     </section>
   );
 }
