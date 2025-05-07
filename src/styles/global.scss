@@ -35,7 +35,7 @@ $spacing-2xl: 40px;
 // ✅ 기본 스타일
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Pretendard Variable', sans-serif;
   background-color: $color-black;
   color: $color-white;
 }
@@ -67,4 +67,13 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+// pretendard font 설정
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/PretendardVariable.woff2') format('woff2-variations');
 }

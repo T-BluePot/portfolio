@@ -1,4 +1,6 @@
 /* 팀 소개 페이지 css */
+@import '../../../styles/typography.scss';
+
 .aboutUs {
   display: flex;
   align-items: center;
@@ -7,4 +9,8 @@
   // 섹션 영역 설정
   height: 100vh;
   width: 100%;
+}
+
+.title {
+  @include text-h1;
 }
