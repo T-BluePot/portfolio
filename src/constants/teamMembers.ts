@@ -1,5 +1,5 @@
-import defaultProfile from '../assets/images/profile/default-profile.png';
-import seoleem from '../assets/images/profile/lslProfile.png';
+import defaultProfile from '@/assets/images/profile/default-profile.png';
+import seoleem from '@/assets/images/profile/lslProfile.png';
 
 // 팀원 소개 변수
 export const teamMembers = [
