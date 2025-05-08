@@ -6,6 +6,7 @@ import TeamCarousel from './components/TeamCarousel';
 export default function AboutUs() {
   return (
     <section id="about-us" className={styles.aboutUs}>
+      <h1 className={styles.aboutTitle}>팀원 소개</h1>
       <TeamCarousel />
     </section>
   );

@@ -3,14 +3,19 @@
 @use '../../../styles/typography.scss' as *;
 
 .aboutUs {
+  // 섹션 영역 설정
+  width: 100vw;
+  min-height: 100vh;
+
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $color-pink-1;
+}
 
-  // 섹션 영역 설정
-  height: 100vh;
-  width: 100vw;
-
-  overflow-x: hidden;
+.aboutTitle {
+  @include text-h1;
+  color: $color-black;
+  margin-bottom: $spacing-2xl;
 }
