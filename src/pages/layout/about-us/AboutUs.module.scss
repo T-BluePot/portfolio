@@ -1,16 +1,14 @@
 /* 팀 소개 페이지 css */
-@import '../../../styles/typography.scss';
+@use '../../../styles/global.scss' as *;
+@use '../../../styles/typography.scss' as *;
 
 .aboutUs {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $color-pink-1;
 
   // 섹션 영역 설정
   height: 100vh;
-  width: 100%;
-}
-
-.title {
-  @include text-h1;
+  width: 100vw;
 }

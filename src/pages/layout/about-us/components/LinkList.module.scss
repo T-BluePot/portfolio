@@ -1,0 +1,30 @@
+@use '../../../../styles/global.scss' as *;
+@use '../../../../styles/typography.scss' as *;
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 250px;
+  gap: $spacing-md;
+}
+
+.git {
+  color: $color-black;
+  font-size: 24px;
+}
+
+.notion {
+  color: $color-black;
+  font-size: 20px;
+}
+
+.velog {
+  color: #21c998;
+  font-size: 20px;
+}
+
+.link {
+  color: $color-black;
+  font-size: 20px;
+}
