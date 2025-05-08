@@ -41,8 +41,9 @@ $font-size-caption: 12px;
 
 @mixin text-h3 {
   font-size: $font-size-h3;
-  font-weight: $font-semi-bold;
+  font-weight: $font-bold;
   line-height: 1.4;
+  letter-spacing: -0.8px;
 }
 
 @mixin text-subtitle {
@@ -53,8 +54,8 @@ $font-size-caption: 12px;
 
 @mixin text-body-lg {
   font-size: $font-size-body-lg;
-  font-weight: $font-regular;
-  line-height: 1.6;
+  font-weight: $font-medium;
+  line-height: 1.2;
 }
 
 @mixin text-body {

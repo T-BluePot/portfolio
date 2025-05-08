@@ -1,0 +1,32 @@
+@use '../../../../styles/global.scss' as *;
+@use '../../../../styles/typography.scss' as *;
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.profileImage {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  gap: 8px;
+  word-break: keep-all;
+}
+
+.name {
+  @include text-h3;
+  color: $color-black;
+}
+
+.intro {
+  @include text-body-lg;
+  color: $color-black;
+}
