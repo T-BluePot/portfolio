@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+
+  width: 250px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .profileImage {
