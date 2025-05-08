@@ -22,4 +22,14 @@ export const teamMembers = [
     intro: '간단하게 한줄로 소개하는 구간입니다.',
     image: defaultProfile,
   },
+  {
+    name: '김수환무',
+    intro: '거북이와두루미.',
+    image: defaultProfile,
+  },
+  {
+    name: '냐냥냥',
+    intro: '거북이와두루미.',
+    image: defaultProfile,
+  },
 ];

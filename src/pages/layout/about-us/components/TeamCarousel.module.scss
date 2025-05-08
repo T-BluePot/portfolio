@@ -1,0 +1,64 @@
+@use '../../../../styles/global.scss' as *;
+@use '../../../../styles/typography.scss' as *;
+
+.carouselWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.customSwiper {
+  width: 100%;
+
+  :global(.swiper-wrapper) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  :global(.swiper-slide) {
+    display: flex;
+    justify-content: center;
+  }
+
+  // 슬라이딩 화살표 크기 변화
+  :global(.swiper-button-prev)::after,
+  :global(.swiper-button-next)::after {
+    font-size: 24px;
+    transition: font-size 0.3s ease-in-out;
+  }
+
+  // 슬라이딩 화살표 투명도 변화
+  :global(.swiper-button-prev),
+  :global(.swiper-button-next) {
+    color: $color-black;
+
+    opacity: 0.1; // 투명도 조절
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  :global(.swiper-button-prev):hover,
+  :global(.swiper-button-next):hover {
+    opacity: 1; // hover 시 또렷하게
+    transform: scale(1.3);
+  }
+
+  :global(.swiper-pagination) {
+    position: relative;
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  :global(.swiper-pagination-bullet) {
+    background-color: $color-white;
+    opacity: 1;
+  }
+
+  :global(.swiper-pagination-bullet-active) {
+    background-color: $color-black;
+  }
+}
+
+.slideWrapper {
+  width: 100%;
+  max-width: 250px;
+}
