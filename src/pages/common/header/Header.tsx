@@ -5,7 +5,6 @@ import clsx from 'clsx';
 import { LOGO } from '@/constants/images';
 import HamburgerButton from './HamburgerButton';
 import Menu from './Menu';
-import ContactUsBtn from './ContactUsBtn';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false); // 스크롤 여부를 감지
@@ -29,9 +28,18 @@ export default function Header() {
       <div className={styles.placeholder} />
 
       <header className={clsx(styles.header, scrolled && styles.scroll)}>
-        <HamburgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} scrolled={scrolled} />
-        <img src={LOGO} alt="푸른핫가마 로고" className={styles.logo} />
-        <ContactUsBtn />
+        <div className={styles.inner}>
+          <img src={LOGO} alt="푸른핫가마 로고" className={styles.logo} />
+
+          <nav className={styles.nav}>
+            <a href="#about-us">팀원 소개</a>
+            <a href="#">프로젝트 소개</a>
+          </nav>
+
+          <div className={styles.menu}>
+            <HamburgerButton menuOpen={menuOpen} setMenuOpen={setMenuOpen} scrolled={scrolled} />
+          </div>
+        </div>
       </header>
 
       <Menu menuOpen={menuOpen} onClose={() => setMenuOpen(false)} />

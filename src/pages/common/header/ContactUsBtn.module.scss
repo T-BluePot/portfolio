@@ -1,9 +1,10 @@
 @use '../../../styles/global.scss' as *;
 @use '../../../styles/typography.scss' as *;
+@use 'sass:color';
 
 .button {
   background-color: $color-blue-2; // 원하는 색상 변수로 바꿔
-  color: white;
+  color: $color-white;
   padding: 8px 16px;
   border: none;
   border-radius: 12px;
@@ -12,7 +13,7 @@
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: darken($color-blue-2, 10%);
+    background-color: color.adjust($color-blue-2, $lightness: -10%);
   }
 
   p {
