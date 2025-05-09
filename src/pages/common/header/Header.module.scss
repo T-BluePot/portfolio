@@ -1,0 +1,44 @@
+@use '../../../styles/global.scss' as *;
+@use '../../../styles/typography.scss' as *;
+
+$header-height: 56px;
+$header-padding: 0 40px;
+$header-bg: $color-gray-1;
+$header-bg-scrolled: rgba($color-gray-1, 0.2);
+
+.placeholder {
+  height: $header-height; // 공간 유지
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  padding: $header-padding;
+  background-color: $header-bg;
+
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: background-color 0.3s ease;
+}
+
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  padding: $header-padding;
+  background-color: $header-bg-scrolled;
+}
+
+.logo {
+  height: 40px;
+  filter: $color-white;
+}
