@@ -1,2 +1,43 @@
 @use '../../../styles/global.scss' as *;
 @use '../../../styles/typography.scss' as *;
+
+.menu {
+  background-color: $color-white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  z-index: 900;
+
+  position: fixed;
+  top: 56px;
+  left: 0;
+  width: 100%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
+
+.list {
+  cursor: pointer;
+  padding: 24px;
+
+  transition: color 0.2s;
+  color: $color-black;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.list:hover {
+  cursor: pointer;
+
+  color: $color-blue-2;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  background-color: $color-gray-5;
+}
