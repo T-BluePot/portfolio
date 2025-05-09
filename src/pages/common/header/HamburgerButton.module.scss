@@ -1,0 +1,18 @@
+@use '../../../styles/global.scss' as *;
+@use '../../../styles/typography.scss' as *;
+
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .icon {
+    font-size: 24px;
+    color: $color-white;
+  }
+
+  .scrolled {
+    color: $color-gray-2;
+  }
+}

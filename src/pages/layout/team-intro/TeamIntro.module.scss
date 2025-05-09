@@ -31,7 +31,7 @@
 }
 
 .subTitle {
-  @include text-h3;
+  @include text-subtitle;
   font-weight: 500;
   word-break: keep-all;
 }
