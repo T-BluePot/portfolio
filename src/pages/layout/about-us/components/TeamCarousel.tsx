@@ -10,14 +10,28 @@ import 'swiper/css/pagination';
 import styles from './TeamCarousel.module.scss';
 
 export default function TeamCarousel() {
+  // 화면에 보이는 팀원 수
   const [itemsVisible, setItemsVisible] = useState(2);
+  // 카드(슬라이딩) 간 간격
+  const [spaceBetween, setSpaceBetween] = useState(8);
 
   useEffect(() => {
     const handleResize = () => {
       const w = window.innerWidth;
-      if (w < 768) setItemsVisible(1);
-      else if (w < 1200) setItemsVisible(2);
-      else setItemsVisible(3);
+
+      if (w < 768) {
+        setItemsVisible(1);
+        setSpaceBetween(0);
+      } else if (w < 992) {
+        setItemsVisible(2);
+        setSpaceBetween(24);
+      } else if (w < 1200) {
+        setItemsVisible(3);
+        setSpaceBetween(32);
+      } else {
+        setItemsVisible(4);
+        setSpaceBetween(64);
+      }
     };
 
     handleResize();
@@ -32,7 +46,7 @@ export default function TeamCarousel() {
         navigation
         pagination={{ clickable: true }}
         slidesPerView={itemsVisible}
-        spaceBetween={40}
+        spaceBetween={spaceBetween}
         loop
         className={styles.customSwiper}
       >

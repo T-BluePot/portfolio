@@ -15,7 +15,9 @@
 }
 
 .aboutTitle {
-  @include text-h1;
+  font-size: $font-size-display;
+  font-weight: $font-thin;
+  line-height: 1.2;
   color: $color-black;
-  margin-bottom: $spacing-2xl;
+  margin-bottom: 66px;
 }
