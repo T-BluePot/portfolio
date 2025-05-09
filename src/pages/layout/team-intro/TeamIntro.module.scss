@@ -1,0 +1,12 @@
+@use '../../../styles/global.scss' as *;
+@use '../../../styles/typography.scss' as *;
+
+.TeamIntro {
+  // 섹션 영역 설정
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  padding: 80px 24px;
+}
