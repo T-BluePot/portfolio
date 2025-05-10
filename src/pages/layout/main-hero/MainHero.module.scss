@@ -1,0 +1,52 @@
+@use '../../../styles/global.scss' as *;
+@use '../../../styles/typography.scss' as *;
+
+.mainHero {
+  position: relative;
+  // 섹션 영역 설정
+  width: 100%;
+  min-height: 100vh;
+
+  gap: 60px;
+
+  background-image: url('@/assets/images/icons/logo.png'); // 실제 경로로 수정
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-black;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba($color-black, 0.9); // ← 여기서 색상과 투명도 조절
+    z-index: 1;
+  }
+
+  > * {
+    position: relative;
+    z-index: 2; // 텍스트 등 내용은 위로
+  }
+}
+
+.title {
+  @include text-display;
+}
+
+.iconComponent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icon {
+  font-size: 24px;
+  color: $color-black;
+}
