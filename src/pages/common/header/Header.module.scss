@@ -21,6 +21,9 @@ $header-bg-scrolled: rgba($color-gray-1, 0.4);
 
   transition: background-color 0.3s ease;
 
+  // TODO : 모달 추가 시 z-index 값 낮추기
+  z-index: 999;
+
   .inner {
     max-width: 1280px; // ✅ 고정된 너비
     margin: 0 auto; // ✅ 가운데 정렬
@@ -39,6 +42,7 @@ $header-bg-scrolled: rgba($color-gray-1, 0.4);
         text-decoration: none;
         color: $color-white;
         @include text-body;
+        font-weight: 300;
         padding: 8px 12px;
         border-radius: 8px;
         transition: background-color 0.2s ease;

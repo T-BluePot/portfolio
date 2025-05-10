@@ -33,6 +33,7 @@ export default function Header() {
 
           <nav className={styles.nav}>
             <a href="#about-us">팀원 소개</a>
+
             <a href="#">프로젝트 소개</a>
           </nav>
 
