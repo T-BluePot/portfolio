@@ -21,6 +21,7 @@ $header-bg-scrolled: rgba($color-gray-1, 0.4);
 
   transition: background-color 0.3s ease;
 
+  // TODO : 모달 추가 시 z-index 값 낮추기
   z-index: 999;
 
   .inner {
