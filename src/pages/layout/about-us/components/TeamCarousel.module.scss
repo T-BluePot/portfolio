@@ -14,6 +14,7 @@
   :global(.swiper-wrapper) {
     display: flex;
     align-items: baseline;
+    // NOTE: 250511 정은우 | 멤버가 4명보다 적어질 때, 가운데 정렬 추가
   }
 
   :global(.swiper-slide) {
