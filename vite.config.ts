@@ -10,4 +10,14 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'), // @를 src/로 매핑
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `
+          @use "@/styles/_variables.scss" as *;
+          @use "@/styles/typography.scss" as *;
+        `,
+      },
+    },
+  },
 });

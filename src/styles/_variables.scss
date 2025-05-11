@@ -1,0 +1,32 @@
+// variables.scss
+// 🎨 메인 컬러 (분홍 계열)
+$color-pink-1: #ffa4a4;
+$color-pink-2: #e6b9de;
+$color-pink-3: #fae7f3;
+
+// 🌊 서브 컬러 (파랑 계열)
+$color-blue-1: #11009e;
+$color-blue-2: #4942e4;
+
+// 🌗 그레이스케일
+$color-black: #23232d;
+$color-gray-1: #363642;
+$color-gray-2: #49495c;
+$color-gray-3: #9e9eac;
+$color-gray-4: #e8e8ef;
+$color-gray-5: #f5f5f5;
+$color-white: #ffffff;
+
+// 💧 투명도용 HEX suffix
+$opacity-20: 33;
+$opacity-40: 66;
+$opacity-80: cc;
+
+// margin & padding 등 공간 정의
+$spacing-xxs: 4px;
+$spacing-xs: 8px;
+$spacing-sm: 12px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 40px;
