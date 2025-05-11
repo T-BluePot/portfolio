@@ -3,20 +3,23 @@
 @use 'sass:color';
 
 .waveFramer {
+  position: absolute;
   width: 100%;
   height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: end;
   z-index: 10;
+
   overflow: hidden;
 }
 
 .wave {
   width: 100%;
-  height: 100%;
-  margin-top: 100px;
+  height: 300%;
+
+  position: absolute;
+  top: 20%;
+
   transform: skewY(-15deg);
-  transform-origin: bottom;
 }

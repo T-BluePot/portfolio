@@ -20,7 +20,7 @@ export default function WaveOne() {
           height: 60,
           amplitude: 30,
           speed: 0.5,
-          points: 2,
+          points: 3,
         }}
         className={styles.wave}
       />
