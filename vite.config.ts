@@ -10,4 +10,11 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'), // @를 src/로 매핑
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@/styles/global.scss" as *;` // ✅ @import는 진짜 글로벌로 박힘
+      }
+    }
+  }
 });
