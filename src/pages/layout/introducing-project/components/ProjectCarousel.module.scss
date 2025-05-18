@@ -1,3 +1,35 @@
-.projectCarouselWrapper{
-    
+.projectCarouselWrapper {
+  position: relative;
+}
+
+.slideItem {
+  width: fit-content; // 카드 하나당 고정 너비
+  flex-shrink: 0; // 줄어들지 않게!
+}
+.horizon {
+  .customSwiper {
+    height: auto;
+    flex-direction: row;
+  }
+}
+.vertical {
+  .customSwiper {
+    max-height: 1000px;
+    height: auto;
+    width: fit-content;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+  }
+
+  .swiper-button-prev {
+    top: 0;
+    transform: translateX(-275%) rotate(-90deg); // 위쪽 화살표
+  }
+
+  .swiper-button-next {
+    bottom: 0;
+    transform: translateX(275%) rotate(90deg); // 아래쪽 화살표
+  }
 }
