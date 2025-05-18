@@ -14,6 +14,7 @@ const IntroducingProject = () => {
       <ProjectCarousel projects={ourProjectList} type="horizontal" />
       <div>
         <ProjectCarousel projects={ourProjectList} type="vertical" />
+        <ProjectInfoSection />
       </div>
     </section>
   );
