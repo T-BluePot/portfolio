@@ -1,3 +1,12 @@
+// pretendard font 설정
+@font-face {
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/PretendardVariable.woff2') format('woff2-variations');
+}
+
 // Pretendard Variable weight 매핑 변수
 $font-thin: 100;
 $font-extra-light: 200;
@@ -75,3 +84,4 @@ $font-size-caption: 12px;
   font-weight: $font-light;
   line-height: 1.4;
 }
+
