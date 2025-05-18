@@ -1,11 +1,14 @@
-import styles from '@/pages/layout/introducing-project/components/ProjectCard.module.scss'
+import type { projectCardPropsType } from '@/@types/project';
 
-type Props = {}
+import styles from '@/pages/layout/introducing-project/components/ProjectCard.module.scss';
 
-const ProjectCard = (props: Props) => {
+const ProjectCard = (project: projectCardPropsType) => {
   return (
-    <div className={styles.projectCardWrapper}>ProjectCard</div>
-  )
-}
+    <div className={styles.projectCardWrapper}>
+      <h3>{project.project.title}</h3>
+      <span>{project.project.category}</span>
+    </div>
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

@@ -1,12 +1,16 @@
+import type { projectInfo } from '@/@types/project';
+
 import styles from '@/pages/layout/introducing-project/IntroducingProject.module.scss';
-import ProjectoCarousel from './components/ProjectoCarousel';
+import ProjectoCarousel from './components/ProjectCarousel';
 
-type Props = {};
+import data from '@/mock/data/ourProjectList.json';
 
-const IntroducingProject = (props: Props) => {
+const ourProjectList = data as projectInfo[];
+
+const IntroducingProject = () => {
   return (
     <section id="introducing-project-wrapper" className={styles.introducingProjectWrapper}>
-      <ProjectoCarousel />
+      <ProjectoCarousel projects={ourProjectList} />
     </section>
   );
 };

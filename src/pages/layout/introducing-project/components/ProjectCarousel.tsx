@@ -1,12 +1,12 @@
+import type { projectCarouselPropsType } from '@/@types/project';
+
 import styles from '@/pages/layout/introducing-project/components/ProjectCarousel.module.scss';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import ProjectCard from '@/pages/layout/introducing-project/components/ProjectCard';
 
-type Props = {};
-
-const ProjectoCarousel = () => {
+const ProjectCarousel = ({ projects }: projectCarouselPropsType) => {
   return (
     <div className={styles.projectCarouselWrapper}>
       <Swiper
@@ -15,29 +15,14 @@ const ProjectoCarousel = () => {
         pagination={{ clickable: true }}
         className={styles.customSwiper}
       >
-        <SwiperSlide>
-          <div>
-            <ProjectCard />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <ProjectCard />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <ProjectCard />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div>
-            <ProjectCard />
-          </div>
-        </SwiperSlide>
+        {projects.map((project) => (
+          <SwiperSlide key={project.id}>
+            <ProjectCard project={project} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
 };
 
-export default ProjectoCarousel;
+export default ProjectCarousel;
