@@ -1,4 +1,6 @@
-// variables.scss
+// src/styles/global.scss
+@use 'typography' as *;
+
 // 🎨 메인 컬러 (분홍 계열)
 $color-pink-1: #ffa4a4;
 $color-pink-2: #e6b9de;
@@ -30,3 +32,22 @@ $spacing-md: 16px;
 $spacing-lg: 24px;
 $spacing-xl: 32px;
 $spacing-2xl: 40px;
+
+// ✅ 기본 스타일
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // 부드러운 스크롤
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Pretendard Variable', sans-serif;
+  background-color: $color-black;
+  color: $color-white;
+}
