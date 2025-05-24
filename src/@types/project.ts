@@ -1,14 +1,17 @@
-type projectCategory = '프로젝트' | '헤커톤';
-type carouselType = 'horizontal' | 'vertical';
-export interface projectInfo {
+type ProjectCategory = '프로젝트' | '헤커톤';
+type CarouselType = 'horizontal' | 'vertical';
+export interface CarouselInfo {
   id: string;
   title: string;
-  category: projectCategory;
+  category: ProjectCategory;
 }
-export interface projectCardPropsType {
-  project: projectInfo;
+export interface ProjectCardPropsType {
+  project: CarouselInfo;
 }
-export interface projectCarouselPropsType {
-  type: carouselType;
-  projects: projectInfo[];
+export interface ProjectCarouselPropsType {
+  type: CarouselType;
+  projects: CarouselInfo[];
+}
+export interface ProjectInfoSectionPropsType {
+  projects: CarouselInfo[];
 }

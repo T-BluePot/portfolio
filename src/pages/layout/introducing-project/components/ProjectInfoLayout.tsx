@@ -1,11 +1,11 @@
-import style from '@/pages/layout/introducing-project/components/ProjectInfo.module.scss';
+import { ReactNode } from 'react';
+import styles from '@/pages/layout/introducing-project/components/ProjectInfo.module.scss';
+interface Props {
+  children: ReactNode;
+}
 
-const ProjectInfoLayout = (props: Props) => {
-  return (
-    <div>
-      <slot />
-    </div>
-  );
+const ProjectInfoLayout = ({ children }: Props) => {
+  return <div className={styles.projectInfoLayoutWrapper}>{children}</div>;
 };
 
 export default ProjectInfoLayout;

@@ -1,5 +1,6 @@
 .projectCarouselWrapper {
   position: relative;
+  height: 100%;
 }
 
 .slideItem {
@@ -15,21 +16,32 @@
 .vertical {
   .customSwiper {
     max-height: 1000px;
-    height: auto;
+    height: 100%;
     width: fit-content;
+    :global(.swiper-wrapper) {
+      height: auto;
+    }
   }
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
   }
 
-  .swiper-button-prev {
-    top: 0;
-    transform: translateX(-275%) rotate(-90deg); // 위쪽 화살표
+  .verticalPrev,
+  .verticalNext {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    cursor: pointer;
+    font-size: 24px;
+    color: #00f; // 예시
   }
 
-  .swiper-button-next {
+  .verticalPrev {
+    top: 0;
+  }
+  .verticalNext {
     bottom: 0;
-    transform: translateX(275%) rotate(90deg); // 아래쪽 화살표
   }
 }
