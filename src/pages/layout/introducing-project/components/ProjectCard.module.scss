@@ -1,0 +1,9 @@
+.projectCardWrapper {
+  width: 200px;
+  height: auto;
+
+  aspect-ratio: 4/3;
+  border-radius: $spacing-md;
+  padding: $spacing-md;
+  background-color: $color-pink-1;
+}

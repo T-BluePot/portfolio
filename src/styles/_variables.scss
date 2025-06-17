@@ -1,6 +1,12 @@
 // src/styles/global.scss
+<<<<<<< HEAD
+@use 'typography' as *;
+
+// variables.scss
+=======
 @use "typography" as *;
 
+>>>>>>> f70affd ([REFACTOR&DESIGN] scss 변수 전역 사용하도록 수정)
 // 🎨 메인 컬러 (분홍 계열)
 $color-pink-1: #ffa4a4;
 $color-pink-2: #e6b9de;
@@ -51,6 +57,3 @@ body {
   background-color: $color-black;
   color: $color-white;
 }
-
-
-

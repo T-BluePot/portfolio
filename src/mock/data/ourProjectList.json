@@ -1,0 +1,42 @@
+[
+  {
+    "id": "team-intro",
+    "title": "팀소개 페이지 프로젝트 기본 설정",
+    "category": "프로젝트"
+  },
+  {
+    "id": "hackathon-2024-disabled",
+    "title": "2024 장애인분야 해커톤 대회",
+    "category": "해커톤"
+  },
+  {
+    "id": "github-cleanup",
+    "title": "GITHUB 정리",
+    "category": "정리"
+  },
+  {
+    "id": "hackathon-until-jul",
+    "title": "해커톤 (~7월)",
+    "category": "해커톤"
+  },
+  {
+    "id": "app-contest-until-sep",
+    "title": "앱 만들기 공모전 (~9월)",
+    "category": "프로젝트"
+  },
+  {
+    "id": "glassbottle-project",
+    "title": "[GlassBottle] 유리병 편지 프로젝트",
+    "category": "프로젝트"
+  },
+  {
+    "id": "moodsel-recommend",
+    "title": "[무드셀] 감정 기반 플레이 추천",
+    "category": "프로젝트"
+  },
+  {
+    "id": "barogo-daily-schedule",
+    "title": "[barogo] 당일 일정 추천 서비스",
+    "category": "프로젝트"
+  }
+]

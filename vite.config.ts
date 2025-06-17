@@ -13,8 +13,8 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@/styles/global.scss" as *;` // ✅ @import는 진짜 글로벌로 박힘
-      }
-    }
-  }
+        additionalData: `@use "@/styles/global.scss" as *;`, // ✅ @import는 진짜 글로벌로 박힘
+      },
+    },
+  },
 });
