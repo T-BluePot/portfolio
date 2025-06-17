@@ -8,7 +8,12 @@ import ProjectCarousel from './ProjectCarousel';
 const ProjectInfoSection = (projectInfo: ProjectInfoSectionPropsType) => {
   return (
     <div className={style.projectInfoSectionWrapper}>
-      <ProjectCarousel type="horizontal" projects={projectInfo.projects} />
+      <div className={style.projectInfoTitleLayout}>
+        <div className={style.projectLogoImg}>
+          <img src="src/assets/images/icons/logo.png" />
+        </div>
+        <ProjectCarousel type="horizontal" projects={projectInfo.projects} />
+      </div>
       <div className={style.projectInfoCententsLayout}>
         <ProjectCarousel type="vertical" projects={projectInfo.projects} />
 

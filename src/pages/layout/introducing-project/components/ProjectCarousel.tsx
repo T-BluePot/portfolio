@@ -12,7 +12,7 @@ import type { ProjectCarouselPropsType } from '@/@types/project';
 const ProjectCarousel = ({ projects, type }: ProjectCarouselPropsType) => {
   const isVertical = type === 'vertical';
   return (
-    <div className={`${styles.projectCarouselWrapper} ${isVertical ? styles.vertical : ''}`}>
+    <div className={`${styles.projectCarouselWrapper} ${isVertical ? styles.vertical : styles.horizontal}`}>
       <Swiper
         modules={[Navigation]}
         direction={isVertical ? 'vertical' : 'horizontal'}

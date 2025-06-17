@@ -4,10 +4,15 @@ export interface CarouselInfo {
   id: string;
   title: string;
   category: ProjectCategory;
+  
 }
 export interface ProjectCardPropsType {
   project: CarouselInfo;
 }
+
+// export type ProjectCardPropsType = CarouselInfo; 
+
+
 export interface ProjectCarouselPropsType {
   type: CarouselType;
   projects: CarouselInfo[];
@@ -15,3 +20,4 @@ export interface ProjectCarouselPropsType {
 export interface ProjectInfoSectionPropsType {
   projects: CarouselInfo[];
 }
+

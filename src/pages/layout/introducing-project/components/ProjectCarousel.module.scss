@@ -2,7 +2,9 @@
   position: relative;
   height: 100%;
 }
-
+.projectCarouselWrapper.horizontal {
+  width: calc(100% - 216px);
+}
 .slideItem {
   width: fit-content; // 카드 하나당 고정 너비
   flex-shrink: 0; // 줄어들지 않게!

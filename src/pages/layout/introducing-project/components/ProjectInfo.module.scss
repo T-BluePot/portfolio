@@ -1,10 +1,26 @@
 .projectInfoSectionWrapper {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: $spacing-md;
   max-width: 70%;
   flex-grow: 1;
-
+  .projectInfoTitleLayout {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    .projectLogoImg {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      > img {
+        width: 143px;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        margin-right: 16px;
+      }
+    }
+  }
   .projectInfoCententsLayout {
     display: flex;
     gap: $spacing-md;
